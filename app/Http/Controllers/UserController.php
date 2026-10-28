@@ -36,7 +36,7 @@ class UserController extends Controller
         $this->authorize('create', User::class);
 
         $roles = Role::orderBy('name')->get();
-        $defaultRole = config('rcgcrm.default_role', 'Ejecutivo');
+        $defaultRole = config('pymecrm.default_role', 'Ejecutivo');
 
         return view('users.create', compact('roles', 'defaultRole'));
     }

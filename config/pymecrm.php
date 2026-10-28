@@ -12,16 +12,16 @@ return [
 
     'modules' => [
         // CRM
-        'dashboard'     => env('RCGCRM_SHOW_DASHBOARD', true),
-        'agenda'        => env('RCGCRM_SHOW_AGENDA', true),
-        'contacts'      => env('RCGCRM_SHOW_CONTACTS', true),
-        'opportunities' => env('RCGCRM_SHOW_OPPORTUNITIES', true),
-        'reports'       => env('RCGCRM_SHOW_REPORTS', true),
+        'dashboard'     => env('PYMECRM_SHOW_DASHBOARD', true),
+        'agenda'        => env('PYMECRM_SHOW_AGENDA', true),
+        'contacts'      => env('PYMECRM_SHOW_CONTACTS', true),
+        'opportunities' => env('PYMECRM_SHOW_OPPORTUNITIES', true),
+        'reports'       => env('PYMECRM_SHOW_REPORTS', true),
 
         // Administración
-        'users'         => env('RCGCRM_SHOW_USERS', true),
-        'roles'         => env('RCGCRM_SHOW_ROLES', true),
-        'permissions'   => env('RCGCRM_SHOW_PERMISSIONS', true),
+        'users'         => env('PYMECRM_SHOW_USERS', true),
+        'roles'         => env('PYMECRM_SHOW_ROLES', true),
+        'permissions'   => env('PYMECRM_SHOW_PERMISSIONS', true),
     ],
 
     /*
@@ -46,6 +46,6 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'default_role' => env('RCGCRM_DEFAULT_ROLE', 'Ejecutivo'),
+    'default_role' => env('PYMECRM_DEFAULT_ROLE', 'Ejecutivo'),
 
 ];

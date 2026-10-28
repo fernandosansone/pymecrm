@@ -1,4 +1,4 @@
-// resources/js/rcgcrm.js
+// resources/js/pymecrm.js
 
 // --- Money input (formato AR: 1.234,56 -> raw: 1234.56)
 window.moneyInput = function moneyInput(initialRaw) {
@@ -54,7 +54,7 @@ window.contactQuickCreate = function contactQuickCreate() {
           return;
         }
 
-        const endpoint = window.RCGCRM?.routes?.contactsQuickStore;
+        const endpoint = window.PYMECRM?.routes?.contactsQuickStore;
         if (!endpoint) {
           this.error = 'No está configurada la ruta de creación rápida.';
           return;

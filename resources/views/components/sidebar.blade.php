@@ -11,7 +11,7 @@
   };
 
   $badgeClass = function (?string $variant = null) {
-    $variants = config('rcgcrm.badge_variants', []);
+    $variants = config('pymecrm.badge_variants', []);
 
     return $variants[$variant]
       ?? $variants['default']
@@ -24,10 +24,10 @@
   <div class="p-5 border-b border-gray-100">
     <div class="flex items-center gap-3">
       <img src="{{ asset('brand/logo.png') }}"
-          alt="RCg"
+          alt="PymeCRM"
           class="h-10 w-10 rounded-full ring-1 ring-gray-200 bg-white p-1 object-contain">
       <div class="min-w-0">
-        <div class="text-sm text-gray-500 leading-none">RCg</div>
+        <div class="text-sm text-gray-500 leading-none">PymeCRM</div>
         <div class="text-base font-semibold text-gray-900 leading-tight">
           Gestión Comercial <span class="text-gray-500">(CRM)</span>
         </div>

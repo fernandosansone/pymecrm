@@ -1,11 +1,11 @@
 <x-guest-layout>
   <div class="text-center mb-6">
     <img src="{{ asset('brand/logo.png') }}"
-        alt="RCg Gestión Comercial"
+        alt="PymeCRM"
         class="mx-auto h-16 w-16 sm:h-20 sm:w-20 object-contain rounded-full ring-1 ring-gray-200 bg-white p-1">
 
     <div class="mt-3 text-lg font-semibold text-gray-900">
-      RCg Gestión Comercial <span class="text-gray-500">(CRM)</span>
+      PymeCRM
     </div>
   </div>
 

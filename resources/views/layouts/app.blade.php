@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'RCg Gestión Comercial (CRM)') }}</title>
+    <title>{{ config('app.name', 'PymeCRM') }}</title>
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,8 +13,8 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
-      window.RCGCRM = window.RCGCRM || {};
-      window.RCGCRM.routes = {
+      window.PYMECRM = window.PYMECRM || {};
+      window.PYMECRM.routes = {
         contactsQuickStore: @json(route('contacts.quick-store')),
       };
     </script>
@@ -33,8 +33,8 @@
           </button>
 
           <div class="min-w-0 flex items-center gap-2">
-            <img src="{{ asset('brand/logo.png') }}" alt="RCg" class="h-7 w-7 rounded-full ring-1 ring-gray-200 bg-white p-1 object-contain">
-            <div class="font-semibold text-gray-900 truncate">RCg Gestión Comercial</div>
+            <img src="{{ asset('brand/logo.png') }}" alt="PymeCRM" class="h-7 w-7 rounded-full ring-1 ring-gray-200 bg-white p-1 object-contain">
+            <div class="font-semibold text-gray-900 truncate">PymeCRM</div>
           </div>
 
           <a href="{{ route('dashboard') }}" class="text-sm text-gray-700 underline underline-offset-4">
@@ -56,9 +56,9 @@
           <div class="absolute inset-y-0 left-0 w-72 bg-white shadow-xl">
             <div class="p-4 border-b border-gray-100 flex items-center justify-between gap-3">
               <div class="flex items-center gap-3 min-w-0">
-                <img src="{{ asset('brand/logo.png') }}" alt="RCg" class="h-8 w-8 rounded-full ring-1 ring-gray-200 bg-white p-1 object-contain">
+                <img src="{{ asset('brand/logo.png') }}" alt="PymeCRM" class="h-8 w-8 rounded-full ring-1 ring-gray-200 bg-white p-1 object-contain">
                 <div class="min-w-0">
-                  <div class="text-sm text-gray-500 leading-none">RCg</div>
+                  <div class="text-sm text-gray-500 leading-none">PymeCRM</div>
                   <div class="text-sm font-semibold text-gray-900 truncate">Gestión Comercial <span class="text-gray-500">(CRM)</span></div>
                 </div>
               </div>

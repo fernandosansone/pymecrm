@@ -15,7 +15,7 @@ class SidebarData
      */
     protected function moduleEnabled(string $key): bool
     {
-        return (bool) config("rcgcrm.modules.$key", true);
+        return (bool) config("pymecrm.modules.$key", true);
     }
 
     /**
